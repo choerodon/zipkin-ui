@@ -1,0 +1,5 @@
+zipkin:
+  storage:
+    type: elasticsearch
+    elasticsearch:
+      hosts: localhost:9200
