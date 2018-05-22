@@ -1,17 +1,15 @@
-# zipkin-ui
+# Zipkin-UI
 
-The UI part of zipkin Application.
+The UI part of Zipkin application.
 
-[**Zipkin**](http://zipkin.io) is a distributed tracing system.
-
-Show the monitoring datas that have been saved in the elasticsearch. It helps gather timing data needed to troubleshoot latency problems in microservice architectures. It manages both the collection and lookup of this data. 
+[**Zipkin**](http://zipkin.io) is a distributed tracing system. Show the monitoring datas that have been saved in the Elasticsearch. It helps gather timing data needed to troubleshoot latency problems in microservice architectures. It manages both the collection and lookup of this data. 
 ## Feature
 
 Track the zipkin version for iteration.
 ## Requirements
 
-You shoule combined this project with the [**zipkin-collector**](https://github.com/choerodon/zipkin-collector). 
-Make sure your zipkin-ui and zipkin-collector config the same elasticsearch.
+You shoule combined this project with the [**Zipkin-collector**](https://github.com/choerodon/zipkin-collector). 
+Make sure your Zipkin-UI and Zipkin-collector config the same Elasticsearch.
 ## Installation and Getting Started
 
 `helm install http://openchart.choerodon.com.cn/choerodon/devops/zipkin-ui --version=0.5.0`
@@ -24,8 +22,8 @@ Replaceable variable：
 
 |           variable        |  definition  |
 | :-----------------------: | :----: |
-| env.open.ZIPKIN_ELASTICSEARCH_HOST | elasticsearch address |
-| version | chart version in `helm install` command |
+| `env.open.ZIPKIN_ELASTICSEARCH_HOST` | elasticsearch address |
+| `version` | chart version in `helm install` command |
 
 ## Dependencies
 
