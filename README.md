@@ -1,20 +1,20 @@
 # zipkin-ui
 
-zipkin UI Application.
+The UI part of zipkin Application.
+
+[**Zipkin**](http://zipkin.io) is a distributed tracing system.
+Show the monitoring data that have saved in elasticsearch.
+
 ## Feature
 
 Track the zipkin version for iteration.
 ## Requirements
 
-Combined with the choerodon-zipkin-collector, you can use it.
-## To get the code
-
-```Shell
-git clone https://github.com/choerodon/zipkin-ui.git
-```
+You shoule combined this project with the [**zipkin-collector**](https://github.com/choerodon/zipkin-collector). 
+Make sure your zipkin-ui and zipkin-collector config the same elasticsearch.
 ## Installation and Getting Started
 
-helm install choerodon-aliyun/choerodon-aliyun/zipkin-ui --version=0.5.0.RELEASE-dev.20180514171729
+`helm install http://openchart.choerodon.com.cn/choerodon/devops/zipkin-ui --version=0.5.0`
 
 You can use the `--set env.open.foo_bar =foobar` to override the environment variables.
 
@@ -24,7 +24,7 @@ Replaceable variable：
 
 |           variable        |  definition  |
 | :-----------------------: | :----: |
-| env.open.ZIPKIN_ELASTICSEARCH_HOST | es path |
+| env.open.ZIPKIN_ELASTICSEARCH_HOST | es address |
 | version | helm image version |
 
 
@@ -34,10 +34,13 @@ Replaceable variable：
 |          Dependencies   |  version  |
 | :---------------------: | :----: |
 |         zipkin          | 1.31.3 |
+| zipkin-autoconfigure-ui | 1.28.0 |
+| zipkin-server | 1.31.3 |
+| zipkin-autoconfigure-storage-elasticsearch-http | 1.31.3 |
+| choerodon-starter-hitoa | 0.5.0.RELEASE |
 
 ## Reporting Issues
-
-If you find any shortcomings or bugs, please describe them in the Issue.
+If you find any shortcomings or bugs, please describe them in the [issue](https://github.com/choerodon/choerodon/issues/new?template=issue_template.md).
     
 ## How to Contribute
-Pull requests are welcome! Follow this link for more information on how to contribute.
+Pull requests are welcome! [Follow](https://github.com/choerodon/choerodon/blob/master/CONTRIBUTING.md) to know for more information on how to contribute.
