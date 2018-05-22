@@ -3,8 +3,8 @@
 The UI part of zipkin Application.
 
 [**Zipkin**](http://zipkin.io) is a distributed tracing system.
-Show the monitoring data that have saved in elasticsearch.
 
+Show the monitoring datas that have been saved in the elasticsearch. It helps gather timing data needed to troubleshoot latency problems in microservice architectures. It manages both the collection and lookup of this data. 
 ## Feature
 
 Track the zipkin version for iteration.
@@ -16,7 +16,7 @@ Make sure your zipkin-ui and zipkin-collector config the same elasticsearch.
 
 `helm install http://openchart.choerodon.com.cn/choerodon/devops/zipkin-ui --version=0.5.0`
 
-You can use the `--set env.open.foo_bar =foobar` to override the environment variables.
+You can use the `--set env.open.FOO_BAR=foobar` to override the environment variables.
 
 ## Documentation
 
@@ -24,10 +24,8 @@ Replaceable variable：
 
 |           variable        |  definition  |
 | :-----------------------: | :----: |
-| env.open.ZIPKIN_ELASTICSEARCH_HOST | es address |
-| version | helm image version |
-
-
+| env.open.ZIPKIN_ELASTICSEARCH_HOST | elasticsearch address |
+| version | chart version in `helm install` command |
 
 ## Dependencies
 
