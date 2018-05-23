@@ -13,7 +13,7 @@ deployment:
 
 env:
   open:
-    ZIPKIN_STORAGE_ELASTICSEARCH_HOST: localhost:9200
+    ZIPKIN_STORAGE_ELASTICSEARCH_HOSTS: localhost:9200
     
 service:
   enable: false
@@ -23,7 +23,7 @@ service:
 
 ingress:
   enable: false
-  host: zipkin-ui.choerodon.com.cn
+  host: zipkin.choerodon.com.cn
 
 metrics:
   path: /prometheus
