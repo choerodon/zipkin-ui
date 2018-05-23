@@ -19,6 +19,11 @@ service:
   enable: false
   type: ClusterIP
   port: 9030
+  name: zipkin-ui
+
+ingress:
+  enable: false
+  host: zipkin-ui.choerodon.com.cn
 
 metrics:
   path: /prometheus
