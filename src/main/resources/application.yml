@@ -3,3 +3,12 @@ zipkin:
     type: elasticsearch
     elasticsearch:
       hosts: localhost:9200
+spring:
+  application:
+    name: zipkin-ui
+server:
+  port: 9030
+management:
+  port: 9031
+  security:
+    enabled: false

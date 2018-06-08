@@ -13,19 +13,24 @@ deployment:
 
 env:
   open:
-    ZIPKIN_STORAGE_ELASTICSEARCH_HOST: localhost:9200
+    ZIPKIN_STORAGE_ELASTICSEARCH_HOSTS: localhost:9200
     
 service:
   enable: false
   type: ClusterIP
   port: 9030
+  name: zipkin-ui
+
+ingress:
+  enable: false
+  host: zipkin.choerodon.com.cn
 
 metrics:
   path: /prometheus
-  label: java-spring
+  group: spring-boot
 
 logs:
-  parser: java-spring
+  parser: spring-boot
 
 resources: 
   # We usually recommend not to specify default resources and to leave this as a conscious
