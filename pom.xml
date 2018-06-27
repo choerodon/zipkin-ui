@@ -5,16 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>zipkin-ui</artifactId>
-    <version>0.6.0.RELEASE</version>
 
     <parent>
         <groupId>io.choerodon</groupId>
         <artifactId>choerodon-framework-parent</artifactId>
-        <version>0.6.0.RELEASE</version>
+        <version>0.7.0.RELEASE</version>
     </parent>
 
     <properties>
-        <choerodon.starters.version>0.5.1.RELEASE</choerodon.starters.version>
+        <choerodon.starters.version>0.5.2.RELEASE</choerodon.starters.version>
     </properties>
 
     <dependencies>
